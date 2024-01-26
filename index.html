@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" id="display" disabled />
+      <br /><br />
+      <button onclick="clearDisplay()" class="a">C</button>
+      <button onclick="pi(3.14)" class="pi_btn">PI</button>
+      <button onclick="performOperation('%')" class="modu_btn">%</button>
+      <button onclick="performOperation('/')" class="divide_btn">/</button>
+      <br /><br />
+      <button onclick="addNumber(7)" class="digit">7</button>
+      <button onclick="addNumber(8)" class="digit">8</button>
+      <button onclick="addNumber(9)" class="digit">9</button>
+      <button onclick="performOperation('*')" class="multiply_btn">x</button>
+      <br /><br />
+      <button onclick="addNumber(4)" class="digit">4</button>
+      <button onclick="addNumber(5)" class="digit">5</button>
+      <button onclick="addNumber(6)" class="digit">6</button>
+      <button onclick="performOperation('-')" class="subtract_btn">-</button>
+
+      <br /><br />
+      <button onclick="addNumber(1)" class="digit">1</button>
+      <button onclick="addNumber(2)" class="digit">2</button>
+      <button onclick="addNumber(3)" class="digit">3</button>
+      <button onclick="performOperation('+')" class="add_btn">+</button>
+
+      <br /><br />
+      <button onclick="addNumber(0)" class="zero_btn digit">0</button>
+      <button onclick="performOperation('.')" class="digit">.</button>
+      <button onclick="calculateResult()" class="equal_btn">=</button>
+      <br /><br />
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
